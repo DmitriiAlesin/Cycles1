@@ -9,22 +9,24 @@ public class SQRServiceTest {
     public void shouldCount() {
         SQRService service = new SQRService();
 
-         int actual = service.calcNumbersRange(200, 300);
-         int expected = 3;
+        int actual = service.calcNumbersRange(200, 300);
+        int expected = 3;
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldMinRangeCount() {
         SQRService service = new SQRService();
         int actual = service.calcNumbersRange(200, 200);
-        int expected =0;
+        int expected = 0;
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldMaxRangeCount() {
         SQRService service = new SQRService();
         int actual = service.calcNumbersRange(300, 300);
-        int expected =0;
+        int expected = 0;
         Assertions.assertEquals(expected, actual);
     }
 }
